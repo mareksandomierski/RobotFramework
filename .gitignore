@@ -1,1 +1,4 @@
 /libspecs/
+/.pydevproject
+*.html
+*.xml
