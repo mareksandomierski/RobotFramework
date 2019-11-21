@@ -2,5 +2,5 @@
 .project
 /.pydevproject
 *.html
-*.xml
 *.png
+output.xml
