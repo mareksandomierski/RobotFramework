@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    This is some basic info about the whole suite
 Library    SeleniumLibrary
+# robot -d results tests/amazon.robot
         
 *** Variables ***
 

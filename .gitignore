@@ -1,4 +1,5 @@
 /libspecs/
+.project
 /.pydevproject
 *.html
 *.xml
