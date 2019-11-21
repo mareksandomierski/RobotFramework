@@ -12,18 +12,19 @@ User must sign in to check out
    [Tags]    Smoke
    #Precondition
    Open Browser    http://www.amazon.com    chrome   options=add_experimental_option("useAutomationExtension",False)
+   Maximize Browser Window
    Wait Until Page Contains    Your Amazon.com    
    Input Text    id=twotabsearchtextbox    Ferrari 458    
    Click Button    xpath=//*[@id="nav-search"]/form/div[2]/div/input
    Wait Until Page Contains    results for "Ferrari 458"   
-   Click Link    xpath: //*[contains(text(),'Maisto Ferrari 458 Speciale 1:18 Special Edition')]    
-   Wait Until Page Contains    Back to search results
-   Click Button    id=add-to-cart-button    
-   Wait Until Page Contains    1 item added to Cart    
+   Click Link    xpath=//span[@class='celwidget slot=SEARCH_RESULTS template=SEARCH_RESULTS widgetId=search-results index=3']//a[@class='a-link-normal a-text-normal']
+   Wait Until Page Contains    Back to results
+   Click Button    id=add-to-cart-button-ubb    
+   Wait Until Page Contains    Added to Cart    
    #Test
-   Click Link    Proceed to Checkout    
-   Page Should Contain Element    ap-signin1a_pagelet_title    
-   Element Text Should Be    ap_signian1a_pagelet_title    Sign In     
+   Click Link    id=hlb-ptc-btn-native   
+   Wait Until Page Contains    Sign-In     
+   Page Should Contain Element    continue       
    #Postcondition   
    Close Browser
        
