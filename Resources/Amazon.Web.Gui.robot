@@ -2,8 +2,7 @@
 Library    SeleniumLibrary
 
 
-*** Keywords ***
-    
+*** Keywords ***    
 Search for Products
    Go To    http://www.amazon.com         
    Wait Until Page Contains    Your Amazon.com    
