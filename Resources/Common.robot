@@ -17,7 +17,7 @@ Custom Keyword 2
     Log    Doing keyword 2
 
 Begin Web Test
-   Open Browser    about:blank    chrome    options=add_experimental_option("useAutomationExtension",False)
+   Open Browser    about:blank    ${BROWSER}    options=add_experimental_option("useAutomationExtension",False)
    Maximize Browser Window
    
 End Web Test

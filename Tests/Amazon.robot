@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    This is some basic info about the whole suite
-Resource    ../Resources/Common.robot
-Resource    ../Resources/Amazon.Web.Gui.robot
+Resource    ../Resources/Common.robot    # for Setup & Teardown
+Resource    ../Resources/Amazon.Web.Gui.robot    # for lower level keywords in test cases
 Suite Setup    Insert Testing Data
 Test Setup    Begin Web Test
 Test Teardown    End Web Test
@@ -10,7 +10,9 @@ Suite Teardown    Cleanup Testing Data
         
 
 *** Variables ***
-
+${BROWSER} =    chrome
+${START_URL} =    http://www.amazon.com
+${SEARCH_TERM} =    Ferrari 458
 
 *** Test Cases ***
 User must sign in to check out
