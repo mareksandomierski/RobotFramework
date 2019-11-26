@@ -1,5 +1,6 @@
 /libspecs/
 .project
+.idea
 /.pydevproject
 *.html
 *.png
