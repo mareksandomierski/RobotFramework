@@ -4,6 +4,7 @@ Library    SeleniumLibrary
 *** Keywords ***
 Verify Search Completed
     Wait Until Page Contains  results for "${SEARCH_TERM}"
+    [Return]    ${SEARCH_TERM}
 
 Click Product Link
     [Documentation]  Clicks on the product's image in the search results list

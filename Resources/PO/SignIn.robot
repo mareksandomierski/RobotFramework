@@ -14,11 +14,11 @@ Login With Valid Credentials
     
 Fill "Email" Field
     [Arguments]    ${Username}
-    Log    Filling Email field with    ${Username}
+    Log    Filling Email field with ${Username}
       
 Fill "Password" Field
     [Arguments]    ${Password}
-    Log    Filling Password field with    ${Password}
+    Log    Filling Password field with ${Password}
     
 Click "Sign In" Button
     Log    Clicking submit button

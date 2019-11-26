@@ -6,7 +6,10 @@ Resource    ../Resources/Amazon.Web.Gui.robot    # for lower level keywords in t
 Test Setup    Begin Web Test
 Test Teardown    End Web Test
 # Suite Teardown    Cleanup Testing Data
-# robot -d results amazon.robot
+# robot -d results tests
+# robot -d results --timestampoutputs tests
+# robot -d results --reporttitle "My Cool Report" --logtitle "My Cool Log" tests
+# robot -d results -L debug tests
         
 
 *** Variables ***
