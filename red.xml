@@ -3,6 +3,7 @@
     <configVersion>2</configVersion>
     <relativeTo>WORKSPACE</relativeTo>
     <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/M600992/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="MyCustomLibrary" path="RobotFramework/Libraries/MyCustomLibrary.py" dynamic="false"/>
     <pythonpath/>
     <classpath/>
     <excludedForValidation/>
