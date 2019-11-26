@@ -26,6 +26,7 @@ Should be able to login
 Logged out user can search for products
     [Tags]  Smoke
     Amazon.Web.Gui.Search for Products
+    Amazon.Web.Gui.Do Some Custom Thing
 
 Logged out user can view a product
     [Tags]  Smoke
